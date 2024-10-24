@@ -1,5 +1,5 @@
 ============
-calendar-cli
+gcalendar-cli
 ============
 
 Command-line Interface for Google Calendar
@@ -8,12 +8,12 @@ Command-line Interface for Google Calendar
    :target: http://badge.fury.io/py/gcalendar-cli
    :alt: PyPI version
 
-.. image:: https://travis-ci.org/mogproject/calendar-cli.svg?branch=master
-   :target: https://travis-ci.org/mogproject/calendar-cli
+.. image:: https://travis-ci.org/mjeveritt/gcalendar-cli.svg?branch=master
+   :target: https://travis-ci.org/mjeveritt/gcalendar-cli
    :alt: Build Status
 
-.. image:: https://coveralls.io/repos/mogproject/calendar-cli/badge.svg?branch=master&service=github
-   :target: https://coveralls.io/github/mogproject/calendar-cli?branch=master
+.. image:: https://coveralls.io/repos/mjeveritt/gcalendar-cli/badge.svg?branch=master&service=github
+   :target: https://coveralls.io/github/mjeveritt/gcalendar-cli?branch=master
    :alt: Coverage Status
 
 .. image:: https://img.shields.io/badge/license-Apache%202.0-blue.svg
@@ -28,7 +28,7 @@ Command-line Interface for Google Calendar
 Dependencies
 ------------
 
-* Python: 2.7 / 3.4
+* Python: 2.7 / 3.4+
 * six
 * python-dateutil
 * pytz
@@ -52,9 +52,9 @@ Installation
 +-------------------------+------------------------------------------+
 | Uninstall               |``pip uninstall gcalendar-cli``           |
 +-------------------------+------------------------------------------+
-| Check installed version |``calendar-cli --version``                |
+| Check installed version |``gcalendar-cli --version``                |
 +-------------------------+------------------------------------------+
-| Help                    |``calendar-cli -h``                       |
+| Help                    |``gcalendar-cli -h``                       |
 +-------------------------+------------------------------------------+
 
 ---------------
@@ -75,21 +75,21 @@ Getting Started
 
 ::
 
-    calendar-cli setup client_secret.json
+    gcalendar-cli setup client_secret.json
 
-The default path to the credentials file is ``~/.credentials/calendar-cli.json``.
+The default path to the credentials file is ``~/.credentials/gcalendar-cli.json``.
 
 3. Print the summary of today's events on the default calendar
 
 ::
 
-    calendar-cli
+    gcalendar-cli
 
 
 * Launch with arguments
 
 ::
 
-    calendar-cli --date 20151014
-    calendar-cli --calendar xxxxxx@group.calendar.google.com
+    gcalendar-cli --date 20151014
+    gcalendar-cli --calendar xxxxxx@group.calendar.google.com
 
